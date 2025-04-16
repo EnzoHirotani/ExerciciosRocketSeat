@@ -25,12 +25,14 @@ body {
 #page {
   width: 1120px;
   margin: 88px auto 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 #title-page {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
 }
 
 img {
@@ -45,14 +47,15 @@ h2 {
   font-size: 32px;
 }
 
-li {
+.li-title {
   font-size: 28px;
   font-weight: bold;
+  margin-bottom: 4px;
 }
 
 h1,
 h2,
-li {
+.li-title {
   color: var(--text-primary);
 }
 
@@ -70,7 +73,6 @@ p {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 40px;
   text-align: center;
   font-style: italic;
 }
@@ -81,6 +83,12 @@ p {
   gap: 64px;
 }
 
+#title-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 ol {
   display: flex;
   flex-direction: column;
@@ -88,8 +96,53 @@ ol {
   list-style-position: inside;
 }
 
+span {
+  font-weight: bold;
+}
+
+.card-travel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+ul li {
+  font-size: 16px;
+  list-style-type: disc;
+}
+
 .divisor {
   height: 1px;
   background-color: var(--border-primary);
   width: 100%;
+}
+
+.historia {
+  color: var(--accent-blue);
+}
+
+.casais {
+  color: var(--accent-purple);
+}
+
+.familias {
+  color: var(--accent-pink);
+}
+
+.orçamento {
+  color: var(--accent-orange);
+}
+
+#msg {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-family: "Alice", serif;
+  margin-bottom: 48px;
 }
