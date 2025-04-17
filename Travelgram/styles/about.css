@@ -1,0 +1,36 @@
+#about {
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--surface-color);
+}
+
+#main {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+#main img {
+  border-radius: 999px;
+}
+
+#main .texto {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#info {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#info .infos {
+  display: flex;
+  gap: 8px;
+}
