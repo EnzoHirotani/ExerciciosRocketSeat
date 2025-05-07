@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  color: var(--text-color-primary);
 }
 
 :root {
@@ -25,6 +26,13 @@ h2 {
   font-size: 16px;
   line-height: 140%;
   font-weight: 800;
+  overflow: hidden;
+
+  display: -webkit-box;
+
+  -webkit-box-orient: vertical;
+
+  -webkit-line-clamp: 3;
 }
 
 h3 {
@@ -42,10 +50,55 @@ span {
 p {
   font-size: 14px;
   line-height: 160%;
+  color: var(--text-color-secondary);
 }
 
 a {
   list-style-type: none;
   text-decoration: none;
   color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.tag {
+  color: var(--text-color-primary);
+  font-size: 10px;
+  background-color: var(--brand-color-dark);
+  padding: 4px 8px;
+  display: inline-block;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.tag:hover {
+  text-decoration: underline;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid var(--stroke-color);
+  padding-top: 12px;
+}
+
+.heading span {
+  color: var(--text-color-secondary);
+}
+
+.heading .vertudo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
 }

@@ -23,6 +23,10 @@ nav:nth-child(1) a p {
   color: var(--brand-color-light);
 }
 
+#brand:hover {
+  text-decoration: none;
+}
+
 nav:nth-child(2) {
   border-top: 1px solid var(--stroke-color);
   border-bottom: 1px solid var(--stroke-color);
