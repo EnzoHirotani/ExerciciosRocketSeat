@@ -1,9 +1,223 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PortfólioDevs</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Maven+Pro:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="intro">
+      <div id="info">
+        <header>
+          <div id="avatar">
+            <div id="icon-code">
+              <img src="assets/Code.svg" alt="ícone de código" />
+            </div>
+            <div class="border_avatar">
+              <img
+                src="https://github.com/EnzoHirotani.png?size=88"
+                alt="Foto de perfil de Enzo Hirotani"
+              />
+            </div>
+          </div>
+          <div id="text_info">
+            <div id="title">
+              <p class="subtitle">
+                Hello World! Meu nome é <span>Enzo Hirotani</span> e sou
+              </p>
+              <h1 class="title_lg">Desenvolvedor Fullstack</h1>
+            </div>
+            <p class="text_sm">
+              Transformo necessidades em aplicações reais, evolventes e
+              funcionais. Desenvolvo sistemas através da minha paixão pela
+              tecnologia, contribuindo com soluções inovadoras e eficazes para
+              desafios complexos.
+            </p>
+          </div>
+        </header>
+        <div id="tags">
+          <div class="tag">
+            <img src="assets/GitHub.svg" alt="GitHub Logo" />
+            <p class="text_md">GitHub</p>
+          </div>
+          <div class="tag">
+            <img src="assets/HTML.svg" alt="HMTL Logo" />
+            <p class="text_md">HTML</p>
+          </div>
+          <div class="tag">
+            <img src="assets/CSS.svg" alt="CSS Logo" />
+            <p class="text_md">CSS</p>
+          </div>
+          <div class="tag">
+            <img src="assets/JavaScript.svg" alt="JavaScript Logo" />
+            <p class="text_md">JavaScript</p>
+          </div>
+          <div class="tag">
+            <img src="assets/React.svg" alt="React Logo" />
+            <p class="text_md">React</p>
+          </div>
+          <div class="tag">
+            <img src="assets/Node.js.svg" alt="NodeJs Logo" />
+            <p class="text_md">Node.js</p>
+          </div>
+        </div>
+        <img src="assets/CaretDoubleDown.svg" alt="Seta pra baixo" />
+      </div>
+    </div>
+    <div id="projects">
+      <header>
+        <p class="subtitle"><span> Meu trabalho</span></p>
+        <p class="title_md">Veja os projetos em destaque</p>
+      </header>
+      <div class="grid">
+        <a
+          href="https://github.com/EnzoHirotani/ExerciciosRocketSeat/tree/main/HTML%20e%20CSS/Travelgram"
+          class="projectCard"
+        >
+          <img src="assets/Thumbnail_Project-01.png" alt="Projeto TravelGram" />
+          <div class="text_card">
+            <h6 class="title_sm">Travelgram</h6>
+            <p class="text_sm">
+              Rede social onde as pessoas mostram os registros de suas viagens
+              pelo mundo
+            </p>
+          </div>
+        </a>
+        <a
+          href="https://github.com/EnzoHirotani/ExerciciosRocketSeat/tree/main/HTML%20e%20CSS/Portal%20de%20Notícias"
+          class="projectCard"
+        >
+          <img src="assets/Thumbnail_Project-02.png" alt="Projeto TechNews" />
+          <div class="text_card">
+            <h6 class="title_sm">Tech News</h6>
+            <p class="text_sm">
+              Homepage de um portal de notícias sobre a área de tecnologia
+            </p>
+          </div>
+        </a>
+        <a
+          href="https://github.com/EnzoHirotani/ExerciciosRocketSeat/tree/main/HTML%20e%20CSS/PáginaDeReceita"
+          class="projectCard"
+        >
+          <img
+            src="assets/Thumbnail_Project-03.png"
+            alt="Projeto Página de Receitas"
+          />
+          <div class="text_card">
+            <h6 class="title_sm">Página de receita</h6>
+            <p class="text_sm">
+              Página com o passo a passo de uma receita para cupcakes
+            </p>
+          </div>
+        </a>
+        <a href="" class="projectCard">
+          <img src="assets/Thumbnail_Project-04.png" alt="Projeto Zingen" />
+          <div class="text_card">
+            <h6 class="title_sm">Zingen</h6>
+            <p class="text_sm">
+              Landing Page completa e responsiva de um aplicativo de Karaokê
+            </p>
+          </div>
+        </a>
+        <a href="" class="projectCard">
+          <img src="assets/Thumbnail_Project-05.png" alt="Projeto Refund" />
+          <div class="text_card">
+            <h6 class="title_sm">Refund</h6>
+            <p class="text_sm">
+              Um sistema para pedido e acompanhamento de reembolso
+            </p>
+          </div>
+        </a>
+        <a
+          href="https://github.com/EnzoHirotani/ExerciciosRocketSeat/tree/main/HTML%20e%20CSS/LocalTurístico"
+          class="projectCard"
+        >
+          <img
+            src="assets/Thumbnail_Project-06.png"
+            alt="Projeto Página de turismo"
+          />
+          <div class="text_card">
+            <h6 class="title_sm">Página de turismo</h6>
+            <p class="text_sm">
+              Página com as principais informações para quem quer viajar para
+              Busan
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div id="services">
+      <header>
+        <p class="subtitle"><span>Meus serviços</span></p>
+        <p class="title_md">Como posso ajudar o seu negócio</p>
+      </header>
+      <div class="grid">
+        <div class="serviceCard">
+          <img src="assets/Devices.svg" alt="icone de computador" />
+          <div class="text_card">
+            <h6 class="title_sm">Websites e Aplicativos</h6>
+            <p class="text_sm">Desenvolvimento de interfaces</p>
+          </div>
+        </div>
+        <div class="serviceCard">
+          <img src="assets/HardDrives.svg" alt="Ícone de drives" />
+          <div class="text_card">
+            <h6 class="title_sm">API e banco de dados</h6>
+            <p class="text_sm">Criação de serviços do sistema</p>
+          </div>
+        </div>
+        <div class="serviceCard">
+          <img src="assets/Infinity.svg" alt="Ícone de Infinito" />
+          <div class="text_card">
+            <h6 class="title_sm">Websites e Aplicativos</h6>
+            <p class="text_sm">Gestão e infraestrutura da aplicação</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <header>
+        <p class="subtitle">Contato</p>
+        <p class="title_md">Gostou do meu trabalho?</p>
+        <p class="text_md">
+          Entre em contato ou acompanhe as minhas redes sociais!
+        </p>
+      </header>
+      <div class="links">
+        <a
+          href="https://www.linkedin.com/in/enzo-hirotani-730a74245"
+          class="social_button"
+        >
+          <img src="assets/LinkedinLogo.svg" alt="logo linkedin" />
+          <p class="linksText">Linkedin</p>
+          <img src="assets/ArrowUpRight.svg" alt="arrowLink" />
+        </a>
+        <a href="https://www.instagram.com/enzohirotani" class="social_button">
+          <img src="assets/InstagramLogo.svg" alt="logo Instagram" />
+          <p class="linksText">Instagram</p>
+          <img src="assets/ArrowUpRight.svg" alt="arrowLink" />
+        </a>
+        <a href="https://github.com/EnzoHirotani" class="social_button">
+          <img src="assets/GithubLogo.svg" alt="logo GitHub" />
+          <p class="linksText">GitHub</p>
+          <img src="assets/ArrowUpRight.svg" alt="arrowLink" />
+        </a>
+        <a
+          href="mailto:enzoyhirotani@gmail.com?subject=Contato via site&body=Olá, gostaria de saber mais sobre..."
+          class="social_button"
+        >
+          <img src="assets/EnvelopeSimple.svg" alt="logo E-mail" />
+          <p class="linksText">E-mail</p>
+          <img src="assets/ArrowUpRight.svg" alt="arrowLink" />
+        </a>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,82 @@
+#intro {
+  background-image: url(/assets/Background_Intro.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 120px;
+  padding-left: 164px;
+  padding-right: 164px;
+}
+
+#info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: content-box;
+  text-align: center;
+  gap: 80px;
+  padding: 0px 180px 0px;
+  margin-bottom: 94px;
+}
+
+#intro header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+}
+
+#intro #info header #avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 112px;
+  height: 112px;
+  position: relative;
+}
+
+#intro #info header #avatar img {
+  border-radius: 50%;
+}
+
+#intro #info header #avatar .border_avatar {
+  border-radius: 50%;
+  border: 2px solid var(--red);
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#icon-code {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+}
+
+#text_info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#tags {
+  display: flex;
+  gap: 16px;
+}
+
+.tag {
+  display: flex;
+  padding: 8px 16px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 999px;
+  background-color: var(--gray-400);
+}
+
+.tag:nth-child(2) img {
+  color: var(--red);
+}
