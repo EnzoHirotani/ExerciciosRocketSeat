@@ -1,39 +1,15 @@
+@import url(/styles/fields/index.css);
+
 main .main-container #child-info {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   padding-top: 1.5rem;
+  border: none;
 }
 
 legend {
   font: 600 1rem/1.25 var(--font-family);
-}
-
-input,
-textarea,
-select {
-  appearance: none;
-  width: 100%;
-  border-radius: 0.5rem;
-  border: 0.0625 rem solid var(--stroke-default);
-  padding: 0.75rem 1rem;
-  font: var(--text);
-}
-
-label {
-  font: var(--text-sm);
-  color: var(--text-secondary);
-
-  display: block;
-  margin-bottom: 0.25rem;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-  outline: 0.25rem solid var(--surface-secondary);
-  border: 0.125rem solid var(--stroke-highlight);
-  padding: 11px 15px;
 }
 
 input[type="date"] {
