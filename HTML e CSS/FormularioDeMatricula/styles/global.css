@@ -1,3 +1,11 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+
+  font-family: var(--font-family);
+}
+
 :root {
   --font-family: "Poppins", sans-serif;
   --text: 400 1rem/1.5 var(--font-family);
@@ -16,4 +24,15 @@
   --stroke-highlight: #f3541c;
 
   --semantic-error: #dc2626;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 125%;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 150%;
+  color: var(--text-secondary);
 }
