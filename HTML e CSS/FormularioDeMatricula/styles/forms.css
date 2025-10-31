@@ -1,6 +1,13 @@
 @import url(/styles/fields/index.css);
 
-main .main-container #child-info {
+main .main-container #form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+main .main-container #child-info,
+#adress-info {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -32,4 +39,27 @@ input[type="date"] {
 
 select {
   background: url(/assets/arrow-down-01.svg) no-repeat calc(100% - 1rem);
+}
+
+.flex {
+  display: flex;
+
+  gap: 1.25rem;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.input-wrapper:has([disabled]) {
+  opacity: 0.5;
+  & input {
+    background-color: var(--surface-disabled);
+    color: var(--text-primary);
+    border: 1px solid var(--stroke-default);
+  }
 }
