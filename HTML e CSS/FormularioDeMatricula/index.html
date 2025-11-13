@@ -148,6 +148,65 @@
                 </div>
               </div>
             </fieldset>
+            <fieldset id="gardian-info">
+              <legend>Informações do responsável</legend>
+              <div class="input-wrapper">
+                <label for="gardianName">Nome do responsável</label>
+                <input id="gardianName" type="text" name="gardianName" />
+                <small
+                  >Principal responsável legal e contato de emergência</small
+                >
+              </div>
+              <div class="input-wrapper">
+                <label for="phone">Telefone</label>
+                <input id="phone" type="tel" name="phone" />
+              </div>
+              <div class="input-wrapper">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" name="email" required />
+                <div class="error">
+                  <img
+                    src="assets/alert-circle.svg"
+                    alt="ícone de alerta vermelho"
+                  />
+                  <span>Insira um e-mail válido</span>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset id="enroll-options">
+              <legend>Opções de matrícula</legend>
+
+              <div class="input-wrapper">
+                <label for="">Selecione o turno de estudo</label>
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input
+                      type="radio"
+                      name="study-shift"
+                      value="morning"
+                      id="morning"
+                    />
+                    <img
+                      src="assets/sun-cloud-02.svg"
+                      alt="ícone de sol com nuvem"
+                    />
+                    <label for="morning">Manhã</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input
+                      type="radio"
+                      name="study-shift"
+                      value="evening"
+                      id="evening"
+                    />
+                    <img src="assets/sun-02.svg" alt="ícone de sol" />
+                    <label for="evening">Tarde</label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
           </form>
         </div>
       </main>

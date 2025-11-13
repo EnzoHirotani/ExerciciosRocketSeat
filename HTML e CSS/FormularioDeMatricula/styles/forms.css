@@ -7,12 +7,20 @@ main .main-container #form-wrapper {
 }
 
 main .main-container #child-info,
-#adress-info {
+#adress-info,
+#gardian-info,
+#enroll-options {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   padding-top: 1.5rem;
   border: none;
+
+  & .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
 }
 
 legend {
@@ -61,5 +69,15 @@ select {
     background-color: var(--surface-disabled);
     color: var(--text-primary);
     border: 1px solid var(--stroke-default);
+  }
+}
+
+#gardian-info p {
+  color: #78716c;
+}
+
+input {
+  &:invalid {
+    border: 0.125rem solid var(--semantic-error);
   }
 }
