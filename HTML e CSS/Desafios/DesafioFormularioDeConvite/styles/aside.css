@@ -1,0 +1,36 @@
+aside {
+  background-image: url(../assets/Background.png);
+  background-size: cover;
+  background-position: center;
+
+  height: 100vh;
+  width: 632px;
+  border-radius: 12px;
+
+  flex: 3;
+}
+
+aside .title {
+  margin: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: baseline;
+}
+
+aside .title img {
+  height: 48px;
+}
+
+aside .title .title-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+aside p {
+  font-family: var(--font-family-body);
+  color: var(--text-heading);
+  font-weight: 300;
+  font-size: 16px;
+}

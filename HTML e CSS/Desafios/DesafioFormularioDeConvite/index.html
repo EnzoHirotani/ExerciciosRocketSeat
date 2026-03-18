@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Festivite</title>
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="validarInput.js" defer></script>
+  </head>
+  <body>
+    <aside>
+      <div class="title">
+        <img src="assets/Logo.svg" alt="Logo Festivite" />
+        <div class="title-text">
+          <h1>Festivite</h1>
+          <p>Crie um convite digital para seu evento</p>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <form action="">
+        <h2>Crie seu convite</h2>
+        <fieldset id="about">
+          <div class="input-title">
+            <img src="assets/icons/calendar.svg" alt="Ícone de calendário" />
+            <legend>Sobre o evento</legend>
+          </div>
+          <div class="input-wrapper">
+            <label for="">Título</label>
+            <input type="text" placeholder="Nome do evento" required />
+            <div class="error-required">
+              <img
+                src="assets/icons/circle-alert.svg"
+                alt="Ícone de alerta de erro"
+              />
+              <span class="error-msg">Preencha este campo.</span>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="input-wrapper">
+              <label for="">Início</label>
+              <input
+                type="datetime-local"
+                placeholder="DD/MM/AAAA, --:--"
+                required
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="">Fim</label>
+              <input
+                type="datetime-local"
+                placeholder="DD/MM/AAAA, --:--"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="toggle-switch-wrapper">
+              <label for="">Tipo</label>
+              <input type="checkbox" name="switch" id="switch" required />
+            </div>
+            <div class="input-wrapper">
+              <label for="">Local</label>
+              <input type="text" placeholder="Link ou endereço" required />
+            </div>
+          </div>
+          <div class="textarea-wrapper">
+            <label for="">Descrição</label>
+            <textarea
+              name="description"
+              id="description"
+              cols="30"
+              rows="10"
+              placeholder="Escreva sobre os detalhes do evento"
+            >
+            </textarea>
+          </div>
+        </fieldset>
+
+        <button>oi</button>
+      </form>
+    </main>
+  </body>
+</html>
