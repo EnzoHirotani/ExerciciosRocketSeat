@@ -29,7 +29,14 @@
   gap: 16px;
 }
 
-#about .input-wrapper {
+#about textarea {
+  width: 100% !important;
+  min-height: 120px;
+  max-height: 600px;
+}
+
+#about .input-wrapper,
+.textarea-wrapper {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -42,7 +49,8 @@
     font-size: 14px;
   }
 
-  input {
+  input,
+  textarea {
     border: 1px solid var(--input-stroke);
     border-radius: 8px;
     height: 48px;
@@ -96,4 +104,93 @@
       color: var(--input-placeholder);
     }
   }
+}
+
+#about .toggle-switch-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  padding: 4px;
+
+  border: 1px solid var(--input-stroke);
+  border-radius: 8px;
+  height: 48px;
+  background-color: var(--input-base);
+  font-family: var(--font-family-body);
+  color: var(--text-heading);
+  position: relative;
+}
+
+#about .toggle-switch-wrapper input[type="radio"] {
+  height: 100%;
+  width: 100%;
+  padding-left: 0;
+
+  appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+}
+
+#about .toggle-switch-wrapper input[type="radio"]:checked {
+  background-color: #2d3136;
+}
+
+#about .toggle-switch-wrapper .type1::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: block;
+
+  background-color: white;
+
+  mask-image: url("../../assets/icons/building-2.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+#about .toggle-switch-wrapper .type1::after {
+  content: "Presencial";
+}
+
+#about .toggle-switch-wrapper .type2::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: block;
+
+  background-color: white;
+
+  mask-image: url("../../assets/icons/video.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+#about .toggle-switch-wrapper .type2::after {
+  content: "Online";
+}
+
+#about .toggle-switch-wrapper .type1:checked,
+.type2:checked {
+  width: 100%;
+}
+
+#about .toggle-switch-wrapper .type1:checked::before,
+#about .toggle-switch-wrapper .type2:checked::before {
+  /*icone*/
+  background-color: var(--brand-light);
+}
+
+#about .toggle-switch-wrapper .type1:checked::after,
+#about .toggle-switch-wrapper .type2:checked::after {
+  /*texto*/
+  font-weight: bold;
+}
+
+#about .textarea-wrapper textarea {
+  padding: 16px;
 }

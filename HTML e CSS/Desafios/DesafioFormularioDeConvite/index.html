@@ -35,13 +35,6 @@
           <div class="input-wrapper">
             <label for="">Título</label>
             <input type="text" placeholder="Nome do evento" required />
-            <div class="error-required">
-              <img
-                src="assets/icons/circle-alert.svg"
-                alt="Ícone de alerta de erro"
-              />
-              <span class="error-msg">Preencha este campo.</span>
-            </div>
           </div>
           <div class="input-group">
             <div class="input-wrapper">
@@ -62,9 +55,24 @@
             </div>
           </div>
           <div class="input-group">
-            <div class="toggle-switch-wrapper">
+            <div class="input-wrapper">
               <label for="">Tipo</label>
-              <input type="checkbox" name="switch" id="switch" required />
+              <div class="toggle-switch-wrapper">
+                <input
+                  type="radio"
+                  name="switch"
+                  id="switch"
+                  required
+                  class="type1"
+                />
+                <input
+                  type="radio"
+                  name="switch"
+                  id="switch"
+                  required
+                  class="type2"
+                />
+              </div>
             </div>
             <div class="input-wrapper">
               <label for="">Local</label>
@@ -76,13 +84,11 @@
             <textarea
               name="description"
               id="description"
-              cols="30"
-              rows="10"
               placeholder="Escreva sobre os detalhes do evento"
-            >
-            </textarea>
+            ></textarea>
           </div>
         </fieldset>
+        <fieldset id="personalize"></fieldset>
 
         <button>oi</button>
       </form>

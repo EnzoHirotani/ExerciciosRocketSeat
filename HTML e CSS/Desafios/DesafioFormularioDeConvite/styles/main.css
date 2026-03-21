@@ -1,4 +1,5 @@
 @import url(fieldsets/about.css);
+@import url(fieldsets/personalize.css);
 
 main {
   background-color: var(--shape-body);
