@@ -1,0 +1,58 @@
+#personalize {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+#personalize .principal-color,
+#personalize .event-theme {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  label {
+    font-family: var(--font-family-body);
+    color: white;
+    font-size: 14px;
+  }
+}
+
+#personalize .principal-color .radio-color-wrapper {
+  display: flex;
+  gap: 12px;
+}
+
+#personalize .principal-color .radio-color-wrapper .input-border {
+  width: 40px;
+  height: 40px;
+  background-color: var(--shape-button);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+#personalize .principal-color .radio-color-wrapper .input-border input {
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#personalize
+  .principal-color
+  .radio-color-wrapper
+  .input-border:has(input:checked) {
+  border: 2px solid var(--brand-light);
+}
+
+#personalize .more-configs,
+#personalize .cover-photo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

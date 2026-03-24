@@ -53,3 +53,37 @@ h1 {
   color: var(--pink);
   font-weight: normal;
 }
+
+.bg-color-navy {
+  background-color: var(--navy);
+}
+.bg-color-cyan {
+  background-color: var(--cyan);
+}
+.bg-color-green {
+  background-color: var(--green);
+}
+.bg-color-lime {
+  background-color: var(--lime);
+}
+.bg-color-yellow {
+  background-color: var(--yellow);
+}
+.bg-color-orange {
+  background-color: var(--orange);
+}
+.bg-color-pink {
+  background-color: var(--pink);
+}
+.bg-color-fuschia {
+  background-color: var(--fuschia);
+}
+.bg-color-purple {
+  background-color: var(--purple);
+}
+.bg-color-danger {
+  background-color: var(--danger);
+}
+.bg-color-brand-light {
+  background-color: var(--brand-light);
+}

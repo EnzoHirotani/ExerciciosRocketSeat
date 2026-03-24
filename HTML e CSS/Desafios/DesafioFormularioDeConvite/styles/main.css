@@ -27,3 +27,29 @@ main form h2 {
   color: var(--text-heading);
   font-size: 28px;
 }
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: none;
+}
+
+fieldset .input-title {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+
+  legend {
+    font-weight: bold;
+    font-family: var(--text-heading);
+    font-size: 18px;
+    color: var(--text-heading);
+    font-family: var(--font-family-header);
+  }
+}
