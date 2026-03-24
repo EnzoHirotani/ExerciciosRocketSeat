@@ -1,5 +1,6 @@
 @import url(fieldsets/about.css);
 @import url(fieldsets/personalize.css);
+@import url(fieldsets/contact.css);
 
 main {
   background-color: var(--shape-body);
