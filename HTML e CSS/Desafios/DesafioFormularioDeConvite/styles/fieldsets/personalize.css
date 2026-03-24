@@ -106,7 +106,7 @@
 #personalize .more-configs {
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: 16px;
 
   label {
     font-family: var(--font-family-body);
@@ -115,12 +115,7 @@
   }
 
   input {
-    border: 1px solid var(--input-stroke);
-    border-radius: 8px;
     height: 48px;
-    padding-left: 16px;
-    background-color: var(--input-base);
-    font-family: var(--font-family-body);
     color: var(--text-heading);
 
     ::placeholder {
@@ -133,13 +128,123 @@
   .style-config {
     display: flex;
     flex-direction: column;
+    gap: 12px;
+    width: 176px;
 
     .style-config-infos {
-      display: flex;
-      gap: 12px;
-      align-items: center;
-      justify-content: center;
-      width: 176px;
+      position: relative;
+
+      input[type="checkbox"] {
+        width: 176px;
+        appearance: none;
+        height: 32px;
+        width: 64px;
+
+        fill: var(--input-base);
+        border: 1px solid var(--input-stroke);
+        border-radius: 999px;
+        cursor: pointer;
+
+        position: relative;
+        transition: ease 0.2s;
+      }
+
+      p {
+        font-family: var(--font-family-body);
+        color: var(--text-body);
+        font-size: 14px;
+      }
     }
   }
+}
+
+#personalize input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: var(--input-stroke);
+  border-radius: 50%;
+  transition: ease 0.2s;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+}
+
+#personalize input[type="checkbox"]::after {
+  content: "Escuro";
+  position: absolute;
+  left: 76px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#personalize input[type="checkbox"]:checked::before {
+  transform: translate(32px, -50%);
+  background-color: white;
+}
+
+#personalize input[type="checkbox"]:checked::after {
+  content: "Claro";
+}
+
+#personalize input[type="checkbox"]:checked {
+  background-color: var(--brand-light);
+}
+
+#personalize .cover-photo .cover-photo-info {
+  display: flex;
+  height: 40px;
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+
+  border-radius: 8px;
+  background: var(--shape-button);
+}
+
+#personalize .cover-photo .cover-photo-infos::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: block;
+
+  background-color: var(--brand-light);
+
+  mask-image: url("../../assets/icons/upload.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+#personalize .cover-photo .cover-photo-info::after {
+  content: "Selecionar";
+  color: var(--Colors-Text-text-heading, #f9f9f9);
+  font-family: var(--Fonts-Family-Body, "Open Sans");
+  font-size: var(--Fonts-Size-Body-Sm, 14px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#personalize .cover-photo .file-text::before {
+  content: "Nenhum arquivo selecionado";
+  color: var(--Colors-Input-input-placeholder, #869198);
+  font-family: var(--Fonts-Family-Body, "Open Sans");
+  font-size: var(--Fonts-Size-Body-Md, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cover-content {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+#personalize .cover-photo input[type="file"] {
+  display: none;
 }
