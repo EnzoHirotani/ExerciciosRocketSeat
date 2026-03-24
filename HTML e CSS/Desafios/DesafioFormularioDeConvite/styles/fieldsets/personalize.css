@@ -20,19 +20,19 @@
 #personalize .principal-color .radio-color-wrapper {
   display: flex;
   gap: 12px;
-}
 
-#personalize .principal-color .radio-color-wrapper .input-border {
-  width: 40px;
-  height: 40px;
-  background-color: var(--shape-button);
-  border-radius: 50%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .input-border {
+    width: 40px;
+    height: 40px;
+    background-color: var(--shape-button);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 
 #personalize .principal-color .radio-color-wrapper .input-border input {
@@ -55,4 +55,91 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+#personalize .theme-radio-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 8px;
+  box-sizing: border-box;
+}
+
+#personalize .theme-radio-wrapper label {
+  display: flex;
+  width: 134px;
+  padding: 4px 4px 8px 4px;
+  flex-direction: column;
+  align-items: center;
+  outline: 2px solid transparent;
+
+  cursor: pointer;
+
+  border-radius: 8px;
+  border: 1px solid var(--Colors-Input-input-stroke, #363b40);
+  background: var(--Colors-Shape-shape-button, #2d3136);
+
+  img {
+    height: 64px;
+    align-self: stretch;
+    margin-bottom: 8px;
+  }
+
+  input {
+    appearance: none;
+  }
+
+  span {
+    color: var(--Colors-Text-text-heading, #f9f9f9);
+    text-align: center;
+    font-family: var(--Fonts-Family-Body, "Open Sans");
+    font-size: var(--Fonts-Size-Body-Sm, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+#personalize .theme-radio-wrapper label:has(input:checked) {
+  outline-color: var(--brand-light);
+}
+
+#personalize .more-configs {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+
+  label {
+    font-family: var(--font-family-body);
+    color: var(--text-body);
+    font-size: 14px;
+  }
+
+  input {
+    border: 1px solid var(--input-stroke);
+    border-radius: 8px;
+    height: 48px;
+    padding-left: 16px;
+    background-color: var(--input-base);
+    font-family: var(--font-family-body);
+    color: var(--text-heading);
+
+    ::placeholder {
+      font-family: var(--font-family-body);
+      color: var(--input-placeholder);
+      font-size: 16px;
+    }
+  }
+
+  .style-config {
+    display: flex;
+    flex-direction: column;
+
+    .style-config-infos {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: center;
+      width: 176px;
+    }
+  }
 }
